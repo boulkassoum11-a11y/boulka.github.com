@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boulka-Ventes plantes</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="fer.png">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+        * {
+            font-family: 'Montserrat', sans-serif;
+            box-sizing: border-box;
+        }
+        .premier {
+    background-image: url("fel.png");
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.navbar img {
+    width: 130px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    color: white;
+    cursor: pointer;
+}
+
+.titre {
+    color: white;
+    padding: 20px 30px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.div2 {
+    padding: 20px 50px;
+}
+
+.scroll-down {
+    color: white;
+    text-decoration: none;
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.delivery-icon {
+    color: #AADD98;
+    font-size: 50px;
+}
+
+.service-details {
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+}
+
+        body {
+            margin: 0;
+        }
+
+        .best-sells {
+            margin: 20px;
+        }
+
+        .best-title {
+            font-size: 40px;
+            font-family: 'Abril Fatface', cursive;
+            font-weight: 100;
+            position: relative;
+        }
+
+        .best-title::before {
+            content: "";
+            position: absolute;
+            background-color: #AADD98;
+            width: 50px;
+            height: 7px;
+            bottom: 0;
+        }
+
+        .best-plants {
+            min-height: 500px;
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .plant-box {
+            min-width: 280px;
+            height: 300px;
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .plant-box:hover {
+            transform: scale(1.03);
+        }
+
+        .plant1 {
+            background-image: url("tulipe.webp");
+        }
+
+        .plant2 {
+            background-image: url("OIP.webp");
+        }
+
+        .plant3 {
+            background-image: url("main.avif");
+        }
+
+        .plants-details {
+            background-color: #FFFFFFDF;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .plante-name {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 5px 0;
+        }
+
+        .plante-price {
+            font-size: 14px;
+            font-weight: 800;
+            color: #AADD98;
+            margin: 5px 0 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #AADD98;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #8dcf79;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header class="premier">
+
+    <div class="navbar">
+        <img src="logo.png" alt="logo">
+
+        <ul>
+            <li>Accueil</li>
+            <li>Boutique</li>
+            <li>Plante d'intérieur</li>
+        </ul>
+    </div>
+
+    <div class="div2">
+        <h1 class="titre">VENTES DE PLANTES AVEC BOULKA</h1>
+
+        <a class="scroll-down" href="#services">
+            Scroll <i class="fas fa-angle-down"></i>
+        </a>
+    </div>
+
+</header>
+<section id="services" class="service">
+
+    <div class="service-item">
+        <i class="fas fa-store delivery-icon"></i>
+        <p class="service-details">
+            Nos magasins à votre service
+        </p>
+    </div>
+
+    <div class="service-item">
+        <i class="fas fa-people-carry delivery-icon"></i>
+        <p class="service-details">
+            Retrait sans contact
+        </p>
+    </div>
+
+    <div class="service-item">
+        <i class="fas fa-truck delivery-icon"></i>
+        <p class="service-details">
+            Livraison gratuite à domicile
+        </p>
+    </div>
+
+</section>
+
+<section class="best-sells">
+
+    <h2 class="best-title">Nos meilleures ventes</h2>
+
+    <div class="best-plants">
+
+        <div class="plant-box plant1">
+            <div class="plants-details">
+                <p class="plante-name">Tulipe</p>
+                <p class="plante-price">2500 F</p>
+
+                <a href="https://wa.me/22384322866?text=Bonjour%20je%20veux%20commander%20la%20Tulipe"
+                   class="btn">
+                    Payer
+                </a>
+            </div>
+        </div>
+
+        <div class="plant-box plant2">
+            <div class="plants-details">
+                <p class="plante-name">Plante verte</p>
+                <p class="plante-price">3500 F</p>
+
+                <a href="https://wa.me/22384322866?text=Bonjour%20je%20veux%20commander%20la%20plante%20verte"
+                   class="btn">
+                    Payer
+                </a>
+            </div>
+        </div>
+
+        <div class="plant-box plant3">
+            <div class="plants-details">
+                <p class="plante-name">Plante d'intérieur</p>
+                <p class="plante-price">1500 F</p>
+
+                <a href="https://wa.me/22384322866?text=Bonjour%20je%20veux%20commander%20la%20plante%20d'intérieur"
+                   class="btn">
+                    Payer
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
